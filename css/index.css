@@ -1,0 +1,145 @@
+.next{
+    height: 300px;
+    width: 85%;
+    background-color: #28282B;
+    margin: 25px auto 25px auto;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    color: white;
+    font-size: 50px;
+    border-radius: 10px 250px 10px 250px;
+}
+.nextTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100px;
+}
+.nextBlock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 50px 100px;
+}
+.nextTime{
+    color: black;
+    background-color: white;
+    height: 100px;
+    width: 30%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D2042D;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.nextButton{
+    color: white;
+    background-color: #D2042D;
+    height: 100px;
+    width: 30%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.nextButton:hover{
+    border-color: white;
+    cursor: pointer;
+}
+th{
+    background-color: #28282B !important;
+}
+table{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    border-bottom: #28282B solid 1px;
+}
+thead {
+    flex: 0 0 auto;
+}
+tbody {
+    height: 375px;
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+tr input{
+    border: none;
+    background: none;
+}
+@media only screen and (max-width: 1275px){
+    .next{
+      font-size: 40px;
+    }
+    .nextTitle{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr;
+        margin: 25px auto 25px auto;
+    }
+    .nextTime{
+        font-size: 30px;
+    }
+    .nextButton{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .next{
+        height: 95%;
+        width: 100%;
+        background-color: #28282B;
+        margin: 0;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr;
+        color: white;
+        font-size: 40px;
+        border-radius: 0;
+    }
+    .nextTitle{
+        height: 150px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr;
+        margin: 25px auto 25px auto;
+        text-align: center;
+    }
+    .nextBlock{
+        display: grid;
+        margin: 0 0 150px 0;
+    }
+    .nextTime{
+        font-size: 30px;
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .nextButton{
+        font-size: 30px;
+        width: 200px;
+    }
+}
+
+table ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+table ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+table ::-webkit-scrollbar-thumb {
+    background: #D2042D; 
+  }
+  
+table ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }

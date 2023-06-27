@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap');
+body{
+    margin: 0;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #464646;
+}
+.titleFont{
+    font-family: 'Orbitron', sans-serif;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #28282B;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template: 1fr / 100px 1fr;
+    z-index: 1;
+}
+.logoBox{
+    height: 80px;
+    width: 80px;
+}
+.logo{
+    height: 80px;
+    width: 80px;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.pfp{
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  border: 1px solid #FFFFFF;  
+}
+nav a{
+    color: #FFFFFF;
+    padding-left: 10px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+}
+nav a:last-child{
+    padding-left: 10px;
+}
+nav a span{
+    font-size: 30px !important;
+}
+nav a:hover{
+    color: #D2042D;
+}
+nav img:hover{
+    border-color: #D2042D;
+}
+
+th{
+    background-color: #28282B !important;
+}
+.tableBtnSize{
+    width: 50px;
+}
+.tableBtnSize a{
+    text-decoration: none;
+    color: black;
+}
+.tableBtn:hover{
+    color: #D2042D;
+    cursor: pointer;
+}
+.tableR:hover{
+    color: black !important;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #28282B;
+    color:white ; 
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+footer p{
+    margin-left: 40px;
+}
+footer span{
+    color:white ;
+    margin-right: 40px;
+    font-size: 40px !important;
+    cursor: pointer;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 550px){
+    header{
+        font-size: 13px;
+        grid-template: 1fr / 70px 1fr;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+    }
+    .pfp{
+        height: 40px;
+        width: 40px;
+    }
+    nav a span{
+        font-size: 20px !important;
+    }
+}
+.unhide{
+    display: none;
+}
+@media only screen and (max-width: 1000px){
+    .hide1000{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 700px){
+    .hide700{
+        display: none !important;
+    }
+    .unhide{
+        display: table-cell;
+    }
+}

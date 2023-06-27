@@ -1,0 +1,116 @@
+.race_info_header{
+    width: 100%;
+    height: 450px;
+    padding: 50px 50px 50px 50px;
+    background: #D2042D;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3); 
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+}
+.race_info_header h1{
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    z-index: 1;
+}
+.race_info_header img{
+    height: 250px;
+}
+.arrow_backward, .arrow_forward{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: 600;
+    background: none;
+    border: none;
+}
+.arrow_backward{
+    left: 15px;
+}
+.arrow_forward{
+    right: 15px;
+}
+.arrow_backward:hover, .arrow_forward:hover{
+    margin-top: 70px;
+    font-size: 80px;
+    transition: .5s;
+}
+.raceBlock{
+    background-color: #28282B;
+    width: 50%;
+    z-index: -1;
+    margin: auto;
+}
+.raceBet{
+    width: 95%;
+    margin: auto;
+    border-right: 10px dashed #D2042D;
+    border-left: 10px dashed #D2042D;
+    background:
+      linear-gradient(to right, white, 10px, transparent 5px),
+      linear-gradient(to left, white, 10px, transparent 5px);
+    background-origin: border-box;
+}
+.raceGrid{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    padding-top: 20px;
+}
+.submit{
+    height: 50px;
+    width: 70%;
+    border: 1px solid black;
+    margin: 10px 15% 0 15%;
+    font-weight: bold;
+    font-size: 20px;
+    position: sticky;
+    top: 85px;
+}
+.raceSegment{
+    width: 200px;
+    margin: 0 auto 10px auto;
+    margin-bottom: 25px;
+    max-height: 80px;
+}
+.raceSegment:nth-of-type(even){
+    margin-top: 40px;
+}
+.raceSegment select{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    font-size: 20px;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+.raceExtend{
+    height: 30px;
+    margin-top: -10px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+@media only screen and (max-width: 1150px){
+    .raceBlock{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .race_info_header{
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .raceSegment{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .race_info_header{
+        height: 700px;
+    }
+    .race_info_header form input{
+        bottom: 150px;
+    }
+}
